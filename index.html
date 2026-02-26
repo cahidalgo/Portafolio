@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Hidalgo | Ingeniería de Sistemas</title>
+  <meta name="description" content="Portfolio personal de Carlos Andrés Hidalgo Bolaños — Estudiante de Ingeniería de Sistemas, Universidad Católica de Colombia." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Carlos<span>.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#certificates">Certificados</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hola, soy</p>
+      <h1 class="hero-title">Carlos Hidalgo</h1>
+      <h2 class="hero-subtitle typed-text" id="typed"></h2>
+      <p class="hero-description">
+        Estudiante de Ingeniería de Sistemas en la Universidad Católica de Colombia.
+        Apasionado por crear soluciones tecnológicas funcionales con enfoque analítico.
+        Basado en Bogotá, Colombia 🇨🇴
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-outline">Contáctame</a>
+      </div>
+      <div class="hero-socials">
+        <!-- REEMPLAZA cahidalgo con tu usuario real de GitHub -->
+        <a href="https://github.com/cahidalgo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:anddres.carlos@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:3053454588" aria-label="Teléfono"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- Reemplaza con tu foto: assets/img/profile.jpg -->
+      <div class="avatar-placeholder" id="avatar">
+        <img src="assets/img/profile.jpg" alt="Carlos Hidalgo" class="profile-img" />
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">Sobre <span>mí</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Soy una persona responsable, puntual y creativa, con una rápida capacidad de aprendizaje.
+            Me adapto fácilmente al trabajo en equipo y tengo habilidades destacadas en mecanografía.
+            Poseo una gran capacidad para la resolución de conflictos, impulsada por mi enfoque analítico
+            y mi visión orientada a la adquisición de nuevas experiencias.
+          </p>
+          <p>
+            Actualmente curso el noveno semestre de Ingeniería de Sistemas en la Universidad Católica de Colombia,
+            donde he adquirido conocimientos sólidos en programación (C++, Java, HTML), gestión de bases de datos SQL
+            e implementación de soluciones tecnológicas. Cuento con un nivel de inglés <strong>B1 (intermedio)</strong>,
+            lo que me permite comprender documentación técnica y comunicarme en contextos profesionales.
+          </p>
+          <ul class="about-info">
+            <li><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</li>
+            <li><i class="fas fa-graduation-cap"></i> Ingeniería de Sistemas — Universidad Católica de Colombia (9.° sem.)</li>
+            <li><i class="fas fa-language"></i> Inglés B1 (intermedio)</li>
+            <li><i class="fas fa-envelope"></i> anddres.carlos@gmail.com</li>
+            <li><i class="fas fa-phone"></i> 305 345 4588 / 314 493 4264</li>
+            <li><i class="fas fa-calendar-alt"></i> Disponible para proyectos: <strong>Sí</strong></li>
+          </ul>
+          <!-- Reemplaza CV_CarlosHidalgo.pdf con tu CV real en assets/img/ -->
+          <a href="assets/img/HojaDeVidaCarlos.pdf" download class="btn btn-primary" style="margin-top:1.5rem;">
+            <i class="fas fa-download"></i> Descargar CV
+          </a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><span class="stat-number" data-target="9">0</span><p>Semestres cursados</p></div>
+          <div class="stat-card"><span class="stat-number" data-target="5">0</span><p>Años programando</p></div>
+          <div class="stat-card"><span class="stat-number" data-target="3">0</span><p>Lenguajes dominados</p></div>
+          <div class="stat-card"><span class="stat-number" data-target="6">0</span><p>Habilidades blandas</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Habilidades <span>técnicas & blandas</span></h2>
+      <div class="skills-categories">
+
+        <!-- TÉCNICAS -->
+        <div class="skill-group">
+          <h3><i class="fas fa-code"></i> Lenguajes de programación</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><span>C++</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-item"><span>Java</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span>HTML5 / CSS3</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fas fa-database"></i> Bases de datos & otros</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><span>SQL</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span>Gestión de BD relacionales</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-item"><span>Inglés técnico (B1)</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="fas fa-tools"></i> Herramientas</h3>
+          <div class="skills-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">NetBeans</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Netlify</span>
+            <span class="tag">Mecanografía</span>
+          </div>
+        </div>
+
+        <!-- BLANDAS -->
+        <div class="skill-group soft-skills-group">
+          <h3><i class="fas fa-brain"></i> Habilidades blandas</h3>
+          <div class="soft-skills-grid">
+
+            <div class="soft-card">
+              <div class="soft-icon"><i class="fas fa-check-circle"></i></div>
+              <h4>Responsabilidad</h4>
+              <p>Cumplo con mis compromisos y plazos, manteniendo altos estándares de calidad en cada tarea.</p>
+            </div>
+
+            <div class="soft-card">
+              <div class="soft-icon"><i class="fas fa-users"></i></div>
+              <h4>Trabajo en equipo</h4>
+              <p>Me adapto fácilmente a entornos colaborativos, aportando ideas y escuchando activamente a mis compañeros.</p>
+            </div>
+
+            <div class="soft-card">
+              <div class="soft-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <h4>Resolución de problemas</h4>
+              <p>Enfoque analítico para identificar la causa raíz de los problemas y proponer soluciones efectivas.</p>
+            </div>
+
+            <div class="soft-card">
+              <div class="soft-icon"><i class="fas fa-comments"></i></div>
+              <h4>Comunicación efectiva</h4>
+              <p>Transmito ideas con claridad, tanto de forma escrita como oral, adaptándome a diferentes audiencias.</p>
+            </div>
+
+            <div class="soft-card">
+              <div class="soft-icon"><i class="fas fa-lightbulb"></i></div>
+              <h4>Pensamiento crítico</h4>
+              <p>Analizo situaciones desde múltiples perspectivas para tomar decisiones informadas y objetivas.</p>
+            </div>
+
+            <div class="soft-card">
+              <div class="soft-icon"><i class="fas fa-clock"></i></div>
+              <h4>Gestión del tiempo</h4>
+              <p>Organizo mis actividades con prioridades claras, logrando cumplir objetivos dentro de los tiempos establecidos.</p>
+            </div>
+
+            <div class="soft-card">
+              <div class="soft-icon"><i class="fas fa-bolt"></i></div>
+              <h4>Aprendizaje rápido</h4>
+              <p>Capacidad para asimilar nuevas tecnologías, metodologías y conceptos en poco tiempo de forma autónoma.</p>
+            </div>
+
+            <div class="soft-card">
+              <div class="soft-icon"><i class="fas fa-palette"></i></div>
+              <h4>Creatividad</h4>
+              <p>Propongo enfoques innovadores y soluciones originales frente a los desafíos del desarrollo de software.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Mis <span>proyectos</span></h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- PROYECTO 1 — Reemplaza con tus proyectos reales -->
+        <div class="project-card" data-category="fullstack">
+          <div class="project-img"><i class="fas fa-laptop-code project-icon"></i></div>
+          <div class="project-info">
+            <div class="project-tags"><span class="tag">Java</span><span class="tag">SQL</span></div>
+            <h3>Nombre del Proyecto 1</h3>
+            <p>Descripción breve del proyecto. Tecnologías usadas y problema que resuelve.</p>
+            <div class="project-links">
+              <a href="https://github.com/cahidalgo/repo1" target="_blank"><i class="fab fa-github"></i> Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <div class="project-img"><i class="fas fa-globe project-icon"></i></div>
+          <div class="project-info">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+            <h3>Nombre del Proyecto 2</h3>
+            <p>Descripción breve del proyecto. Tecnologías usadas y problema que resuelve.</p>
+            <div class="project-links">
+              <a href="https://github.com/cahidalgo/repo2" target="_blank"><i class="fab fa-github"></i> Código</a>
+              <a href="https://DEMO.netlify.app" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <div class="project-img"><i class="fas fa-database project-icon"></i></div>
+          <div class="project-info">
+            <div class="project-tags"><span class="tag">C++</span><span class="tag">SQL</span></div>
+            <h3>Nombre del Proyecto 3</h3>
+            <p>Descripción breve del proyecto. Tecnologías usadas y problema que resuelve.</p>
+            <div class="project-links">
+              <a href="https://github.com/cahidalgo/repo3" target="_blank"><i class="fab fa-github"></i> Código</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="center-btn">
+        <a href="https://github.com/cahidalgo?tab=repositories" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> Ver todos en GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATES ── -->
+  <section class="section section-alt" id="certificates">
+    <div class="container">
+      <h2 class="section-title">Certificados & <span>Educación</span></h2>
+
+      <!-- EDUCACIÓN FORMAL -->
+      <div class="edu-timeline">
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <span class="edu-date">2021 – Actualidad</span>
+            <h3>Ingeniería de Sistemas y Computación</h3>
+            <p><i class="fas fa-university"></i> Universidad Católica de Colombia — 9.° semestre</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <span class="edu-date">2013 – 2020</span>
+            <h3>Bachiller Académico</h3>
+            <p><i class="fas fa-school"></i> Fundación Instituto Tecnológico del Sur</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICADOS (añade los tuyos) -->
+      <h3 class="sub-title">Certificaciones</h3>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-info">
+            <h3>Nombre del Certificado 1</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Plataforma / Institución</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> Mes, Año</p>
+            <a href="https://link-al-certificado.com" target="_blank" class="cert-link">Ver credencial <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <div class="cert-info">
+            <h3>Nombre del Certificado 2</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Plataforma / Institución</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> Mes, Año</p>
+            <a href="https://link-al-certificado.com" target="_blank" class="cert-link">Ver credencial <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-info">
+            <h3>Nombre del Certificado 3</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Plataforma / Institución</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> Mes, Año</p>
+            <a href="https://link-al-certificado.com" target="_blank" class="cert-link">Ver credencial <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Hablemos <span>📬</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>¿Tienes un proyecto en mente, quieres colaborar o simplemente saludar? ¡Escríbeme!</p>
+          <ul class="contact-list">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:anddres.carlos@gmail.com">anddres.carlos@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:3053454588">305 345 4588</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:3144934264">314 493 4264</a></li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/cahidalgo" target="_blank">github.com/cahidalgo</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</li>
+          </ul>
+        </div>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>No rellenes esto: <input name="bot-field" /></label></p>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame tu idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Diseñado y desarrollado con <i class="fas fa-heart" style="color:var(--accent)"></i> por <strong>Carlos Andrés Hidalgo Bolaños</strong></p>
+      <div class="footer-socials">
+        <a href="https://github.com/cahidalgo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:anddres.carlos@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Ir arriba"><i class="fas fa-chevron-up"></i></button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
