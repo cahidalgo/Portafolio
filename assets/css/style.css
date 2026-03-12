@@ -195,6 +195,64 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
 .scroll-top{position:fixed;bottom:2rem;right:2rem;z-index:999;background:var(--accent);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity var(--transition),transform var(--transition);box-shadow:0 4px 20px rgba(124,106,247,.5)}
 .scroll-top.visible{opacity:1;pointer-events:all}
 .scroll-top:hover{transform:translateY(-3px)}
+/* ── TECH CARDS (reemplaza las barras) ── */
+.tech-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.tech-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 100px;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  cursor: default;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px rgba(124, 106, 247, 0.2);
+}
+
+.tech-card-icon {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.tech-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.tech-level {
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+}
+
+/* Colores por nivel */
+.level-bas {
+  background: rgba(96, 165, 250, 0.15);
+  color: #60a5fa;
+}
+.level-mid {
+  background: rgba(124, 106, 247, 0.15);
+  color: var(--accent-light);
+}
+.level-adv {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+}
 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
