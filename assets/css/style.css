@@ -157,7 +157,23 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
 .edu-content h3{margin:.3rem 0 .4rem;font-size:1rem}
 .edu-content p{color:var(--text-muted);font-size:.88rem;display:flex;align-items:center;gap:.5rem}
 
-/* ── CERTIFICATES ── */
+/* ── EXPERIENCE TIMELINE ── */
+.experience-timeline{display:flex;flex-direction:column;gap:2rem}
+.exp-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;transition:transform var(--transition),border-color var(--transition),box-shadow var(--transition)}
+.exp-item:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 8px 25px rgba(124,106,247,.15)}
+.exp-header{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:flex-start;margin-bottom:1.2rem}
+.exp-title-section{display:flex;flex-direction:column;gap:.3rem}
+.exp-title{font-size:1.1rem;font-weight:600;color:var(--text)}
+.exp-company{font-size:.9rem;color:var(--accent);display:flex;align-items:center;gap:.4rem}
+.exp-period{display:flex;flex-direction:column;gap:.4rem;text-align:right;font-size:.85rem;color:var(--text-muted)}
+.exp-date,.exp-location{display:flex;align-items:center;gap:.4rem}
+.exp-description{border-top:1px solid var(--border);padding-top:1.2rem}
+.exp-description ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.exp-description li{color:var(--text-muted);font-size:.9rem;display:flex;gap:.8rem;padding-left:.4rem}
+.exp-description li::before{content:'▸';color:var(--accent);font-weight:bold;flex-shrink:0}
+.exp-tags{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+
+<!-- ── CERTIFICATES ── */
 .certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
 .cert-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.8rem;display:flex;gap:1.2rem;align-items:flex-start;transition:transform var(--transition),border-color var(--transition)}
 .cert-card:hover{transform:translateY(-4px);border-color:var(--accent)}
@@ -268,6 +284,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:
   .contact-grid{grid-template-columns:1fr}
   .footer-content{flex-direction:column;text-align:center}
   .soft-skills-grid{grid-template-columns:1fr 1fr}
+  .exp-header{grid-template-columns:1fr;gap:1rem}
+  .exp-period{text-align:left}
 }
 @media(max-width:480px){
   .soft-skills-grid{grid-template-columns:1fr}
