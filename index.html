@@ -3,523 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carlos Hidalgo | Ingeniería de Sistemas</title>
-  <meta name="description" content="Portfolio personal de Carlos Andrés Hidalgo Bolaños — Estudiante de Ingeniería de Sistemas, Universidad Católica de Colombia." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Portafolio de Carlos Hidalgo Bolaños, Ingeniero de Sistemas y Computación y desarrollador de software." />
+  <title>Carlos Hidalgo | Ingeniero de Sistemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-
-  <!-- ── NAVBAR ── -->
+  <div class="page-glow" aria-hidden="true"></div>
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo">Carlos<span>.</span></a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#home" class="nav-logo"><span class="logo-mark">C</span><span class="logo-name">Carlos<span class="accent">.</span></span></a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#about">Perfil</a></li>
+        <li><a href="#skills">Stack</a></li>
         <li><a href="#experience">Experiencia</a></li>
         <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#certificates">Certificados</a></li>
-        <li><a href="#contact">Contacto</a></li>
-        <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
+        <li><a href="#certificates">Formación</a></li>
+        <li><a href="#contact" class="nav-cta">Hablemos <i class="fas fa-arrow-up-right-from-square"></i></a></li>
+        <li><button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema"><i class="fas fa-sun"></i></button></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ── HERO ── -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <p class="hero-greeting">Hola, soy</p>
-      <h1 class="hero-title">Carlos Hidalgo</h1>
-      <h2 class="hero-subtitle typed-text" id="typed"></h2>
-      <p class="hero-description">
-        Ingeniero de Sistemas y Computación graduado de la Universidad Católica de Colombia.
-        Especializado en desarrollo de software, bases de datos y sistemas mainframe.
-        Apasionado por crear soluciones tecnológicas funcionales con enfoque analítico.
-        Ubicado en Bogotá, Colombia 🇨🇴
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-        <a href="#contact" class="btn btn-outline">Contáctame</a>
-      </div>
-      <div class="hero-socials">
-  
-        <a href="https://github.com/cahidalgo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/carlos-andr%C3%A9s-hidalgo-bola%C3%B1os-4a8373372" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:andres.carlos@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="tel:3053454588" aria-label="Teléfono"><i class="fas fa-phone"></i></a>
-      </div>
-    </div>
-    <div class="hero-image">
-
-      <div class="avatar-placeholder" id="avatar">
-        <img src="assets/img/profile.png" alt="Carlos Hidalgo" class="profile-img" />
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- ── ABOUT ── -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">Sobre <span>mí</span></h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Ingeniero de Sistemas y Computación recién graduado con sólidos conocimientos en desarrollo de software, bases de datos y tecnologías. Cuento con experiencia práctica como desarrollador en procesos proactivos y orientados a resultados, con capacidad de adaptación rápida y trabajo en entornos de alta exigencia.
-          </p>
-          <p>
-            He trabajado en la industria bancaria con sistemas mainframe y COBOL, participando en análisis, diseño y corrección de errores en sistemas heredados. Tengo facilidad para aprender rápido, me adapto bien al trabajo en equipo y disfruto encontrar soluciones prácticas a los retos que se presentan.
-          </p>
-          <ul class="about-info">
-            <li><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</li>
-            <li><i class="fas fa-graduation-cap"></i> Ingeniero de Sistemas — Universidad Católica de Colombia (2021-2026)</li>
-            <li><i class="fas fa-language"></i> Inglés (Intermedio)</li>
-            <li><i class="fas fa-envelope"></i> andres.carlos@gmail.com</li>
-            <li><i class="fas fa-phone"></i> +57 3053454588</li>
-            <li><i class="fas fa-calendar-alt"></i> Disponible para proyectos: <strong>Sí</strong></li>
-          </ul>
-          <!-- Reemplaza CV_CarlosHidalgo.pdf con tu CV real en assets/img/ -->
-          <a href="assets/img/HojaDeVidaCarlos.pdf" download class="btn btn-primary" style="margin-top:1.5rem;">
-            <i class="fas fa-download"></i> Descargar CV
-          </a>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Ingeniería · Software · Sistemas</p>
+        <h1>Carlos<br /><span class="gradient-text">Hidalgo</span><span class="cursor">_</span></h1>
+        <h2 class="hero-subtitle" id="typed" aria-live="polite"></h2>
+        <p class="hero-lead">Ingeniero de Sistemas y Computación apasionado por crear soluciones tecnológicas, aprender continuamente y convertir retos en oportunidades de mejora.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explorar proyectos <i class="fas fa-arrow-right"></i></a>
+          <a href="assets/img/CV Carlos Hidalgo.pdf" download class="btn btn-ghost"><i class="fas fa-download"></i> Descargar CV</a>
         </div>
-        <div class="about-stats">
-          <div class="stat-card"><span class="stat-number" data-target="4">0</span><p>Años programando</p></div>
-          <div class="stat-card"><span class="stat-number" data-target="6">0</span><p>Lenguajes dominados</p></div>
-          <div class="stat-card"><span class="stat-number" data-target="8">0</span><p>Habilidades blandas</p></div>
+        <div class="hero-meta">
+          <span><i class="fas fa-location-dot"></i> Bogotá, Colombia</span>
+          <span class="meta-divider"></span>
+          <span class="available"><i class="fas fa-circle"></i> Disponible para proyectos</span>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/cahidalgo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/carlos-andr%C3%A9s-hidalgo-bola%C3%B1os-4a8373372" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:andres.carlos@gmail.com" aria-label="Correo electrónico"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="visual-frame">
+          <div class="visual-grid"></div>
+          <div class="visual-label label-top">CO / 2026</div>
+          <div class="visual-label label-bottom">SOFTWARE ENGINEER</div>
+          <img src="assets/img/profile.png" alt="Carlos Hidalgo" class="profile-img" width="1254" height="1254" fetchpriority="high" decoding="async" />
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ── SKILLS ── -->
-  <section class="section section-alt" id="skills">
-    <div class="container">
-      <h2 class="section-title">Habilidades <span>técnicas & blandas</span></h2>
-      <div class="skills-categories">
-
-        <!-- TÉCNICAS -->
-        <div class="skill-group">
-          <h3><i class="fas fa-code"></i> Lenguajes de programación</h3>
-          <div class="tech-cards">
-            <div class="tech-card">
-              <i class="fab fa-java tech-card-icon"></i>
-              <span class="tech-name">Java</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-copyright tech-card-icon"></i>
-              <span class="tech-name">C++</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-html5 tech-card-icon"></i>
-              <span class="tech-name">HTML5</span>
-              <span class="tech-level level-adv">Avanzado</span>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-css3-alt tech-card-icon"></i>
-              <span class="tech-name">CSS3</span>
-              <span class="tech-level level-adv">Avanzado</span>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-js tech-card-icon"></i>
-              <span class="tech-name">JavaScript</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-react tech-card-icon"></i>
-              <span class="tech-name">React</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fab fa-python tech-card-icon"></i>
-              <span class="tech-name">Python</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-code tech-card-icon"></i>
-              <span class="tech-name">Dart</span>
-              <span class="tech-level level-bas">Básico</span>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-mobile tech-card-icon"></i>
-              <span class="tech-name">Flutter</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-code tech-card-icon"></i>
-              <span class="tech-name">COBOL</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">01</span><div><p class="eyebrow">Perfil profesional</p><h2>Una mirada <span>más cercana</span></h2></div></div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="large-copy">Ingeniero de Sistemas y Computación con experiencia en desarrollo de software, análisis de sistemas y mejora de procesos tecnológicos.</p>
+            <p>He trabajado en desarrollo y mantenimiento de software bancario en COBOL, así como en gestión administrativa y de nómina con ERP. Combino rigor técnico y conocimiento de procesos empresariales para analizar, documentar y mejorar sistemas de alta exigencia.</p>
+            <p>Mi perfil también se proyecta hacia el desarrollo Full Stack, el análisis de datos y la construcción de soluciones con Java, JavaScript, React, PHP, Python, SQL, PostgreSQL y Flutter.</p>
+            <a href="#contact" class="text-link">Conocer más sobre mi perfil <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="about-details reveal reveal-delay">
+            <div class="detail-row"><span>Formación</span><strong>Ingeniería de Sistemas y Computación</strong><small>Universidad Católica de Colombia · 2021–2026</small></div>
+            <div class="detail-row"><span>Especialidad</span><strong>Desarrollo Full Stack & sistemas empresariales</strong><small>Frontend · Backend · Bases de datos · COBOL · Mainframe</small></div>
+            <div class="detail-row"><span>Idiomas</span><strong>Español · Inglés intermedio</strong></div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="skill-group">
-          <h3><i class="fas fa-database"></i> Bases de datos & otros</h3>
-          <div class="tech-cards">
-            <div class="tech-card">
-              <i class="fas fa-table tech-card-icon"></i>
-              <span class="tech-name">SQL</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-database tech-card-icon"></i>
-              <span class="tech-name">MySQL</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-database tech-card-icon"></i>
-              <span class="tech-name">PostgreSQL</span>
-              <span class="tech-level level-mid">Intermedio</span>
-            </div>
-            <div class="tech-card">
-              <i class="fas fa-flag-usa tech-card-icon"></i>
-              <span class="tech-name">Inglés</span>
-              <span class="tech-level level-bas">Intermedio</span>
-            </div>
-          </div>
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">02</span><div><p class="eyebrow">Tecnologías</p><h2>Mi caja de <span>herramientas</span></h2></div></div>
+        <div class="skills-layout">
+          <div class="skill-group reveal"><div class="group-title"><i class="fas fa-code"></i><h3>Lenguajes & desarrollo</h3></div><div class="skill-list"><span><i class="fab fa-java"></i>Java</span><span><i class="fas fa-copyright"></i>C++</span><span><i class="fab fa-python"></i>Python</span><span><i class="fab fa-js"></i>JavaScript</span><span><i class="fab fa-php"></i>PHP</span><span><i class="fas fa-code"></i>TypeScript</span><span><i class="fab fa-html5"></i>HTML5</span><span><i class="fab fa-css3-alt"></i>CSS3</span><span><i class="fas fa-code"></i>Dart</span><span><i class="fas fa-terminal"></i>COBOL</span><span><i class="fab fa-react"></i>React</span><span><i class="fas fa-mobile-screen-button"></i>Flutter</span></div></div>
+          <div class="skill-group reveal reveal-delay"><div class="group-title"><i class="fas fa-database"></i><h3>Datos & plataformas</h3></div><div class="skill-list"><span><i class="fas fa-table"></i>SQL</span><span><i class="fas fa-database"></i>MySQL</span><span><i class="fas fa-database"></i>PostgreSQL</span><span><i class="fas fa-database"></i>SQLite</span><span><i class="fas fa-server"></i>Mainframe</span><span><i class="fab fa-node-js"></i>Node JS</span></div></div>
+          <div class="skill-group reveal"><div class="group-title"><i class="fas fa-screwdriver-wrench"></i><h3>Herramientas</h3></div><div class="skill-list"><span><i class="fab fa-git-alt"></i>Git</span><span><i class="fab fa-github"></i>GitHub</span><span><i class="fas fa-code"></i>VS Code</span><span><i class="fas fa-laptop-code"></i>NetBeans</span><span><i class="fab fa-linux"></i>Linux</span><span><i class="fab fa-ubuntu"></i>Ubuntu</span><span><i class="fas fa-cloud-arrow-up"></i>Netlify</span><span><i class="fas fa-file-excel"></i>Microsoft Office</span></div></div>
         </div>
-
-
-        <div class="skill-group">
-          <h3><i class="fas fa-tools"></i> Herramientas</h3>
-          <div class="skills-tags">
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">VS Code</span>
-            <span class="tag">NetBeans</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">Linux</span>
-            <span class="tag">Ubuntu</span>
-            <span class="tag">Netlify</span>
-            <span class="tag">COBOL</span>
-            <span class="tag">Mainframe</span>
-            <span class="tag">Microsoft Office</span>
-            <span class="tag">Java</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">React</span>
-            <span class="tag">Node JS</span>
-            <span class="tag">Html</span>
-            <span class="tag">Css</span>
-
-          </div>
-        </div>
-
-        <!-- BLANDAS -->
-        <div class="skill-group soft-skills-group">
-          <h3><i class="fas fa-brain"></i> Habilidades blandas</h3>
+        <div class="soft-skills-section reveal">
+          <div class="soft-heading"><div class="group-title"><i class="fas fa-sparkles"></i><h3>También me define</h3></div><p>Competencias que aplico para aprender, colaborar y resolver problemas con claridad.</p></div>
           <div class="soft-skills-grid">
-
-            <div class="soft-card">
-              <div class="soft-icon"><i class="fas fa-check-circle"></i></div>
-              <h4>Responsabilidad</h4>
-              <p>Cumplo con mis compromisos y plazos, manteniendo altos estándares de calidad en cada tarea.</p>
-            </div>
-
-            <div class="soft-card">
-              <div class="soft-icon"><i class="fas fa-users"></i></div>
-              <h4>Trabajo en equipo</h4>
-              <p>Me adapto fácilmente a entornos colaborativos, aportando ideas y escuchando activamente a mis compañeros.</p>
-            </div>
-
-            <div class="soft-card">
-              <div class="soft-icon"><i class="fas fa-puzzle-piece"></i></div>
-              <h4>Resolución de problemas</h4>
-              <p>Enfoque analítico para identificar la causa raíz de los problemas y proponer soluciones efectivas.</p>
-            </div>
-
-            <div class="soft-card">
-              <div class="soft-icon"><i class="fas fa-comments"></i></div>
-              <h4>Comunicación efectiva</h4>
-              <p>Transmito ideas con claridad, tanto de forma escrita como oral, adaptándome a diferentes audiencias.</p>
-            </div>
-
-            <div class="soft-card">
-              <div class="soft-icon"><i class="fas fa-lightbulb"></i></div>
-              <h4>Pensamiento crítico</h4>
-              <p>Analizo situaciones desde múltiples perspectivas para tomar decisiones informadas y objetivas.</p>
-            </div>
-
-            <div class="soft-card">
-              <div class="soft-icon"><i class="fas fa-clock"></i></div>
-              <h4>Gestión del tiempo</h4>
-              <p>Organizo mis actividades con prioridades claras, logrando cumplir objetivos dentro de los tiempos establecidos.</p>
-            </div>
-
-            <div class="soft-card">
-              <div class="soft-icon"><i class="fas fa-bolt"></i></div>
-              <h4>Aprendizaje rápido</h4>
-              <p>Capacidad para asimilar nuevas tecnologías, metodologías y conceptos en poco tiempo de forma autónoma.</p>
-            </div>
-
-            <div class="soft-card">
-              <div class="soft-icon"><i class="fas fa-palette"></i></div>
-              <h4>Adaptabilidad</h4>
-              <p>Me adapto rápidamente a nuevos entornos, tecnologías y cambios en los requisitos del proyecto.</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── EXPERIENCE ── -->
-  <section class="section section-alt" id="experience">
-    <div class="container">
-      <h2 class="section-title">Experiencia <span>Laboral</span></h2>
-      
-      <div class="experience-timeline">
-        <!-- EXPERIENCIA 1 -->
-        <div class="exp-item">
-          <div class="exp-header">
-            <div class="exp-title-section">
-              <h3 class="exp-title">Practicante de Desarrollo</h3>
-              <p class="exp-company"><i class="fas fa-building"></i> Davivienda S.A.</p>
-            </div>
-            <div class="exp-period">
-              <span class="exp-date"><i class="fas fa-calendar"></i>Enero 2026 - Julio 2026</span>
-              <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</span>
-            </div>
-          </div>
-          <div class="exp-description">
-            <ul>
-              <li>Desarrollo y mantenimiento de programas en lenguaje COBOL dentro del ecosistema bancario de Davivienda</li>
-              <li>Participación en análisis, diseño y modificación de módulos del core bancario orientados a transacciones digitales</li>
-              <li>Documentación técnica de procesos y flujos de datos en sistemas mainframe</li>
-            </ul>
-            <div class="exp-tags">
-              <span class="tag">COBOL</span>
-              <span class="tag">Mainframe</span>
-              <span class="tag">SQL</span>
-              <span class="tag">Banca</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- EXPERIENCIA 2 -->
-        <div class="exp-item">
-          <div class="exp-header">
-            <div class="exp-title-section">
-              <h3 class="exp-title">Auxiliar de Oficina</h3>
-              <p class="exp-company"><i class="fas fa-building"></i> Construcciones y Transportes JMC SAS</p>
-            </div>
-            <div class="exp-period">
-              <span class="exp-date"><i class="fas fa-calendar"></i> Nov 2024 - Abr 2025</span>
-              <span class="exp-location"><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</span>
-            </div>
-          </div>
-          <div class="exp-description">
-            <ul>
-              <li>Gestión y organización de documentación administrativa operativa de la empresa</li>
-              <li>Apoyo en el manejo de herramientas ofimáticas para el registro y seguimiento de información</li>
-              <li>Coordinación de comunicaciones internas y externas del área administrativa</li>
-            </ul>
-            <div class="exp-tags">
-              <span class="tag">Microsoft Office</span>
-              <span class="tag">Organización</span>
-              <span class="tag">Comunicación</span>
-            </div>
+            <article class="soft-card"><div class="soft-icon"><i class="fas fa-check-circle"></i></div><h4>Responsabilidad</h4><p>Cumplo con mis compromisos y plazos, manteniendo altos estándares de calidad en cada tarea.</p></article>
+            <article class="soft-card"><div class="soft-icon"><i class="fas fa-users"></i></div><h4>Trabajo en equipo</h4><p>Me adapto a entornos colaborativos, aportando ideas y escuchando activamente a mis compañeros.</p></article>
+            <article class="soft-card"><div class="soft-icon"><i class="fas fa-puzzle-piece"></i></div><h4>Resolución de problemas</h4><p>Identifico la causa raíz de los problemas y propongo soluciones efectivas con enfoque analítico.</p></article>
+            <article class="soft-card"><div class="soft-icon"><i class="fas fa-comments"></i></div><h4>Comunicación efectiva</h4><p>Transmito ideas con claridad, tanto de forma escrita como oral, adaptándome a diferentes audiencias.</p></article>
+            <article class="soft-card"><div class="soft-icon"><i class="fas fa-lightbulb"></i></div><h4>Pensamiento crítico</h4><p>Analizo situaciones desde múltiples perspectivas para tomar decisiones informadas y objetivas.</p></article>
+            <article class="soft-card"><div class="soft-icon"><i class="fas fa-clock"></i></div><h4>Gestión del tiempo</h4><p>Organizo mis actividades con prioridades claras y cumplo objetivos dentro de los tiempos establecidos.</p></article>
+            <article class="soft-card"><div class="soft-icon"><i class="fas fa-bolt"></i></div><h4>Aprendizaje rápido</h4><p>Asimilo nuevas tecnologías, metodologías y conceptos de forma autónoma y constante.</p></article>
+            <article class="soft-card"><div class="soft-icon"><i class="fas fa-palette"></i></div><h4>Adaptabilidad</h4><p>Me adapto rápidamente a nuevos entornos, tecnologías y cambios en los requisitos.</p></article>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── PROJECTS ── -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title">Mis <span>proyectos</span></h2>
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="frontend">Frontend</button>
-        <button class="filter-btn" data-filter="backend">Backend</button>
-        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-      </div>
-      <div class="projects-grid" id="projects-grid">
-
-        <div class="project-card" data-category="fullstack">
-          <div class="project-img"><i class="fas fa-mobile-alt project-icon"></i></div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">SQLite</span></div>
-            <h3>Trabajo de grado</h3>
-            <p>MVP de aplicación móvil como medio de intermediación laboral para los vendedores ambulantes del sistema de Transmilenio de Bogotá.</p>
-            <div class="project-links">
-              <a href="https://github.com/cahidalgo/Trabajo-de-grado" target="_blank"><i class="fab fa-github"></i> Código</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="fullstack">
-          <div class="project-img"><i class="fas fa-shopping-cart project-icon"></i></div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Java</span><span class="tag">SQL</span><span class="tag">React</span></div>
-            <h3>E-commerce de libros</h3>
-            <p>Tienda virtual para la visualización, selección y compra de libros a través de una tarjeta de membresía recargable.</p>
-            <div class="project-links">
-              <a href="https://github.com/cahidalgo/e-commerce" target="_blank"><i class="fab fa-github"></i> Código</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card" data-category="fullstack">
-          <div class="project-img"><i class="fas fa-film project-icon"></i></div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">TypeScript</span></div>
-            <h3>Movies</h3>
-            <p>Aplicación web de almacenamiento y ordenamiento de películas según la preferencia del cliente.</p>
-            <div class="project-links">
-              <a href="https://github.com/cahidalgo/Movies" target="_blank"><i class="fab fa-github"></i> Código</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project-card" data-category="frontend">
-          <div class="project-img"><i class="fas fa-running project-icon"></i></div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">React</span></div>
-            <h3>Web de Patinaje</h3>
-            <p>Frontend de aplicación web para el manejo de tiempos y récords de estudiantes en una institución de patinaje.</p>
-            <div class="project-links">
-              <a href="https://github.com/cahidalgo/Patinaje" target="_blank"><i class="fab fa-github"></i> Código</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="center-btn">
-        <a href="https://github.com/cahidalgo?tab=repositories" target="_blank" class="btn btn-outline">
-          <i class="fab fa-github"></i> Ver todos en GitHub
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CERTIFICATES ── -->
-  <section class="section section-alt" id="certificates">
-    <div class="container">
-      <h2 class="section-title">Certificados & <span>Educación</span></h2>
-
-      <!-- EDUCACIÓN FORMAL -->
-      <div class="edu-timeline">
-        <div class="edu-item">
-          <div class="edu-dot"></div>
-          <div class="edu-content">
-            <span class="edu-date">2021 – 2026</span>
-            <h3>Ingeniería de Sistemas y Computación</h3>
-            <p><i class="fas fa-university"></i> Universidad Católica de Colombia — Graduado 2026 ✓</p>
-          </div>
-        </div>
-        <div class="edu-item">
-          <div class="edu-dot"></div>
-          <div class="edu-content">
-            <span class="edu-date">2013 – 2020</span>
-            <h3>Bachiller Académico</h3>
-            <p><i class="fas fa-school"></i> Fundación Instituto Tecnológico del Sur</p>
-          </div>
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">03</span><div><p class="eyebrow">Trayectoria</p><h2>Experiencia <span>profesional</span></h2></div></div>
+        <div class="experience-list">
+          <article class="experience-card featured reveal"><div class="experience-top"><span class="experience-number">01</span><div><p class="experience-date">Enero 2026 — Julio 2026 · Bogotá</p><h3>Practicante de Desarrollo</h3><p class="company">Davivienda S.A.</p></div><i class="fas fa-arrow-up-right-from-square card-arrow"></i></div><div class="experience-body"><ul><li>Desarrollo y mantenimiento de programas en lenguaje COBOL dentro del ecosistema bancario de Davivienda.</li><li>Participación en análisis, diseño y modificación de módulos del core bancario orientados a transacciones digitales.</li><li>Documentación técnica de procesos y flujos de datos en sistemas mainframe.</li></ul><div class="tag-list"><span>COBOL</span><span>Mainframe</span><span>SQL</span><span>Banca</span></div></div></article>
+          <article class="experience-card reveal"><div class="experience-top"><span class="experience-number">02</span><div><p class="experience-date">Noviembre 2024 — Abril 2025 · Bogotá</p><h3>Auxiliar de Oficina</h3><p class="company">Construcciones y Transportes JMC SAS</p></div><i class="fas fa-arrow-up-right-from-square card-arrow"></i></div><div class="experience-body"><ul><li>Gestión y organización de documentación administrativa operativa de la empresa.</li><li>Apoyo en herramientas ofimáticas para el registro y seguimiento de información.</li><li>Coordinación de comunicaciones internas y externas del área administrativa.</li></ul><div class="tag-list"><span>Microsoft Office</span><span>Organización</span><span>Comunicación</span></div></div></article>
         </div>
       </div>
+    </section>
 
-      <!-- CERTIFICADOS (añade los tuyos) -->
-      <h3 class="sub-title">Certificaciones</h3>
-      <div class="certs-grid">
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-          <div class="cert-info">
-            <h3>GitHub Copilot</h3>
-            <p class="cert-issuer"><i class="fas fa-building"></i> Platzi</p>
-            <p class="cert-date"><i class="fas fa-calendar"></i> Febrero, 2026 </p>
-            <a href="assets/certificados/diploma-github-copilot.pdf" target="_blank" class="cert-link">Ver credencial <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-award"></i></div>
-          <div class="cert-info">
-            <h3>Herramientas de IA para developers 2</h3>
-            <p class="cert-issuer"><i class="fas fa-building"></i> Platzi </p>
-            <p class="cert-date"><i class="fas fa-calendar"></i> Febrero, 2026</p>
-            <a href="assets/certificados/diploma-herramientas-ai-developers.pdf" target="_blank" class="cert-link">Ver credencial <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
-          <div class="cert-info">
-            <h3>Curso de ChatGPT</h3>
-            <p class="cert-issuer"><i class="fas fa-building"></i> Platzi </p>
-            <p class="cert-date"><i class="fas fa-calendar"></i> Marzo, 2026</p>
-            <a href="https://link-al-certificado.com" target="_blank" class="cert-link">Ver credencial <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
-          <div class="cert-info">
-            <h3>EXCEL AVANZADO Y FUNDAMENTOS DE POWER BI PARA EL ANÁLISIS DE DATOS EMPRESARIALES</h3>
-            <p class="cert-issuer"><i class="fas fa-building"></i> Colsubsidio</p>
-            <p class="cert-date"><i class="fas fa-calendar"></i> Octubre, 2026 · En curso</p>
-          </div>
+    <section class="section section-dark projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading heading-inline reveal"><div><p class="eyebrow">Trabajo seleccionado</p><h2>Proyectos que <span>he construido</span></h2></div><a href="https://github.com/cahidalgo?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-link">Ver GitHub <i class="fas fa-arrow-up-right-from-square"></i></a></div>
+        <div class="filter-buttons reveal"><button class="filter-btn active" data-filter="all">Todos</button><button class="filter-btn" data-filter="frontend">Frontend</button><button class="filter-btn" data-filter="fullstack">Full Stack</button></div>
+        <div class="projects-grid">
+          <article class="project-card featured-project reveal" data-category="fullstack"><div class="project-visual visual-mobile"><span class="project-index">01 / 04</span><i class="fas fa-mobile-screen-button"></i><span class="visual-caption">MOBILE APP</span></div><div class="project-info"><div class="project-topline"><span>Trabajo de grado</span><i class="fas fa-arrow-up-right-from-square"></i></div><p>MVP de aplicación móvil como medio de intermediación laboral para vendedores ambulantes del sistema de Transmilenio de Bogotá.</p><div class="tag-list"><span>Flutter</span><span>Dart</span><span>SQLite</span></div><a href="https://github.com/cahidalgo/Trabajo-de-grado" target="_blank" rel="noopener noreferrer" class="project-link">Ver código <i class="fab fa-github"></i></a></div></article>
+          <article class="project-card reveal reveal-delay" data-category="fullstack"><div class="project-visual visual-commerce"><span class="project-index">02 / 04</span><i class="fas fa-cart-shopping"></i><span class="visual-caption">E-COMMERCE</span></div><div class="project-info"><div class="project-topline"><span>E-commerce de libros</span><i class="fas fa-arrow-up-right-from-square"></i></div><p>Tienda virtual para visualizar, seleccionar y comprar libros mediante una tarjeta de membresía recargable.</p><div class="tag-list"><span>Java</span><span>SQL</span><span>React</span></div><a href="https://github.com/cahidalgo/e-commerce" target="_blank" rel="noopener noreferrer" class="project-link">Ver código <i class="fab fa-github"></i></a></div></article>
+          <article class="project-card reveal" data-category="fullstack"><div class="project-visual visual-movies"><span class="project-index">03 / 04</span><i class="fas fa-film"></i><span class="visual-caption">WEB APP</span></div><div class="project-info"><div class="project-topline"><span>Movies</span><i class="fas fa-arrow-up-right-from-square"></i></div><p>Aplicación web de almacenamiento y ordenamiento de películas según la preferencia del cliente.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>TypeScript</span></div><a href="https://github.com/cahidalgo/Movies" target="_blank" rel="noopener noreferrer" class="project-link">Ver código <i class="fab fa-github"></i></a></div></article>
+          <article class="project-card reveal reveal-delay" data-category="frontend"><div class="project-visual visual-skate"><span class="project-index">04 / 04</span><i class="fas fa-person-skating"></i><span class="visual-caption">FRONTEND</span></div><div class="project-info"><div class="project-topline"><span>Web de Patinaje</span><i class="fas fa-arrow-up-right-from-square"></i></div><p>Frontend para el manejo de tiempos y récords de estudiantes en una institución de patinaje.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>React</span></div><a href="https://github.com/cahidalgo/Patinaje" target="_blank" rel="noopener noreferrer" class="project-link">Ver código <i class="fab fa-github"></i></a></div></article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── CONTACT ── -->
-  <section class="section" id="contact">
-    <div class="container">
-      <h2 class="section-title">Hablemos <span>📬</span></h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p>¿Tienes un proyecto en mente, quieres colaborar o simplemente saludar? ¡Escríbeme!</p>
-          <ul class="contact-list">
-            <li><i class="fas fa-envelope"></i> <a href="mailto:andres.carlos@gmail.com">andres.carlos@gmail.com</a></li>
-            <li><i class="fas fa-phone"></i> <a href="tel:3053454588">+57 3053454588</a></li>
-            <li><i class="fab fa-github"></i> <a href="https://github.com/cahidalgo" target="_blank">github.com/cahidalgo</a></li>
-            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/carlos-andr%C3%A9s-hidalgo-bola%C3%B1os-4a8373372" target="_blank">Linkedin</a></li>
-            <li><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</li>
-          </ul>
+    <section class="section education-section" id="certificates">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-index">04</span><div><p class="eyebrow">Formación continua</p><h2>Educación & <span>certificaciones</span></h2></div></div>
+        <div class="subsection-heading reveal"><i class="fas fa-graduation-cap"></i><div><h3>Educación académica</h3><p>La base académica que acompaña mi desarrollo profesional.</p></div></div>
+        <div class="education-grid">
+          <div class="education-card reveal"><span class="education-year">2021 — 2026</span><i class="fas fa-graduation-cap"></i><h3>Ingeniería de Sistemas y Computación</h3><p>Universidad Católica de Colombia</p><small>Graduado 2026</small></div>
+          <div class="education-card reveal reveal-delay"><span class="education-year">2013 — 2020</span><i class="fas fa-school"></i><h3>Bachiller Académico</h3><p>Fundación Instituto Tecnológico del Sur</p></div>
         </div>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
-          <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden"><label>No rellenes esto: <input name="bot-field" /></label></p>
-          <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="5" placeholder="Cuéntame tu idea..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">
-            <i class="fas fa-paper-plane"></i> Enviar mensaje
-          </button>
-        </form>
+        <div class="subsection-heading certifications-heading reveal"><i class="fas fa-certificate"></i><div><h3>Certificaciones</h3><p>Formación complementaria y aprendizaje continuo.</p></div></div>
+        <div class="certs-grid">
+          <article class="cert-card reveal"><i class="fas fa-certificate"></i><div><h3>GitHub Copilot</h3><p>Platzi · Febrero 2026</p><a href="assets/certificados/diploma-github-copilot.pdf" target="_blank" rel="noopener noreferrer">Ver credencial <i class="fas fa-arrow-right"></i></a></div></article>
+          <article class="cert-card reveal reveal-delay"><i class="fas fa-award"></i><div><h3>Herramientas de IA para developers 2</h3><p>Platzi · Febrero 2026</p><a href="assets/certificados/diploma-herramientas-ai-developers.pdf" target="_blank" rel="noopener noreferrer">Ver credencial <i class="fas fa-arrow-right"></i></a></div></article>
+          <article class="cert-card reveal"><i class="fas fa-graduation-cap"></i><div><h3>Curso de ChatGPT</h3><p>Platzi · Marzo 2026</p><span class="not-available">Credencial no disponible</span></div></article>
+          <article class="cert-card reveal reveal-delay"><i class="fas fa-chart-line"></i><div><h3>Excel avanzado y fundamentos de Power BI para el análisis de datos empresariales</h3><p>Colsubsidio · Octubre 2026 · En curso</p></div></article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>Diseñado y desarrollado con <i class="fas fa-heart" style="color:var(--accent)"></i> por <strong>Carlos Andrés Hidalgo Bolaños</strong></p>
-      <div class="footer-socials">
-        <a href="https://github.com/cahidalgo" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/carlos-andr%C3%A9s-hidalgo-bola%C3%B1os-4a8373372" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:anddres.carlos@gmail.com"><i class="fas fa-envelope"></i></a>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner reveal">
+        <div><p class="eyebrow">¿Hablamos?</p><h2>El próximo proyecto<br /><span>puede empezar aquí.</span></h2><p class="contact-copy">Si tienes una oportunidad, proyecto o simplemente quieres conectar, estaré encantado de escucharte.</p></div>
+        <div class="contact-actions"><a href="mailto:andres.carlos@gmail.com" class="contact-email">andres.carlos@gmail.com <i class="fas fa-arrow-up-right-from-square"></i></a><div class="social-links"><a href="https://github.com/cahidalgo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/carlos-andr%C3%A9s-hidalgo-bola%C3%B1os-4a8373372" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="tel:3053454588" aria-label="Teléfono"><i class="fas fa-phone"></i></a></div></div>
       </div>
-    </div>
-  </footer>
-
-  <button class="scroll-top" id="scroll-top" aria-label="Ir arriba"><i class="fas fa-chevron-up"></i></button>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-content"><span class="footer-logo">Carlos<span class="accent">.</span></span><p>© 2026 Carlos Hidalgo · Diseñado y construido con intención.</p><a href="#home" class="back-top">Volver arriba <i class="fas fa-arrow-up"></i></a></div></footer>
+  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
